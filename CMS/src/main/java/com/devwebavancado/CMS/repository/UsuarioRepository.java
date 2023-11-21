@@ -1,0 +1,8 @@
+package com.devwebavancado.CMS.repository;
+
+import com.devwebavancado.CMS.entidades.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    Usuario findByNome(String nome);
+}
