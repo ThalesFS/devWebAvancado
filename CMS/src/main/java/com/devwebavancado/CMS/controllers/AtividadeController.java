@@ -3,6 +3,7 @@ package com.devwebavancado.CMS.controllers;
 import com.devwebavancado.CMS.entidades.Atividade;
 import com.devwebavancado.CMS.service.AtividadeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

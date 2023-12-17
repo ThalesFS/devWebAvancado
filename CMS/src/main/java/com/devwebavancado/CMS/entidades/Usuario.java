@@ -25,11 +25,17 @@ public class Usuario {
     private String afiliacao = "Usuario";
 
     @ManyToMany
-    @JoinTable(name = "usuario_atividade_favorita", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "atividade_id"))
+
     private Set<Atividade> atividadesFavoritas = new HashSet<>();
 
     public void favoritarAtividade(Atividade atividade) {
         atividadesFavoritas.add(atividade);
+    }
+
+    public void desfavoritarAtividade(Atividade atividade){
+        if (atividadesFavoritas!= null){
+            atividadesFavoritas.remove(atividade);
+        }
     }
 
 }

@@ -20,8 +20,8 @@ public class EdicaoController {
     }
 
     @GetMapping("/{id}")
-    public Edicao obterEdicao(@RequestBody Edicao edicao){
-        return edicaoService.obterEdicao(edicao.getId());
+    public Edicao obterEdicao(@PathVariable Long id){
+        return edicaoService.obterEdicao(id);
     }
 
     @PostMapping

@@ -1,0 +1,112 @@
+{
+    "usuarios": [
+      {
+        "nome": "Thales Soares",
+        "login": "thaleco",
+        "email": "thales@gmail.com",
+        "senha": "senha123"
+      },
+      {
+        "nome": "Ana Silva",
+        "login": "ana.silva",
+        "email": "ana.silva@gmail.com",
+        "senha": "senha456"
+      },
+      {
+        "nome": "Lucas Pereira",
+        "login": "lucas_p",
+        "email": "lucas.pereira@hotmail.com",
+        "senha": "senha789"
+      }
+    ],
+    "atividades": [
+      {
+        "tipo": "Palestra",
+        "nome": "Introdução à Inteligência Artificial",
+        "descricao": "Palestra introdutória sobre IA",
+        "data": "2023-01-02",
+        "horarioInicio": "09:00",
+        "horarioFim": "10:30"
+      },
+      {
+        "tipo": "Workshop",
+        "nome": "Design Thinking na Prática",
+        "descricao": "Workshop prático de Design Thinking",
+        "data": "2023-01-03",
+        "horarioInicio": "14:00",
+        "horarioFim": "16:30"
+      },
+      {
+        "tipo": "Exposição",
+        "nome": "Inovações Tecnológicas",
+        "descricao": "Exposição de últimas inovações tecnológicas",
+        "data": "2023-01-04",
+        "horarioInicio": "10:00",
+        "horarioFim": "18:00"
+      }
+    ],
+    "edicoes": [
+      {
+        "ano": 2023,
+        "numeroEdicao": 1,
+        "dataInicial": "2023-01-01",
+        "dataFinal": "2023-01-05",
+        "cidade": "São Paulo"
+      },
+      {
+        "ano": 2023,
+        "numeroEdicao": 2,
+        "dataInicial": "2023-02-01",
+        "dataFinal": "2023-02-05",
+        "cidade": "Rio de Janeiro"
+      },
+      {
+        "ano": 2023,
+        "numeroEdicao": 3,
+        "dataInicial": "2023-03-01",
+        "dataFinal": "2023-03-05",
+        "cidade": "Belo Horizonte"
+      }
+    ],
+    "espacos": [
+      {
+        "nome": "Sala A",
+        "localizacao": "Andar 1",
+        "capacidade": 50,
+        "recursos": "Cadeiras, Projetor, Quadro Branco"
+      },
+      {
+        "nome": "Auditório Central",
+        "localizacao": "Térreo",
+        "capacidade": 200,
+        "recursos": "Cadeiras, Sistema de Som, Telão"
+      },
+      {
+        "nome": "Laboratório",
+        "localizacao": "Andar 2",
+        "capacidade": 100,
+        "recursos": "Mesas, Cadeiras"
+      }
+    ],
+    "eventos": [
+      {
+        "nome": "Congresso de Tecnologia",
+        "descricao": "Evento anual sobre inovações tecnológicas",
+        "sigla": "TECHCON",
+        "caminho": "congresso-tecnologia"
+      },
+      {
+        "nome": "Feira de Ciências",
+        "descricao": "Exibição de projetos científicos",
+        "sigla": "FEIRA",
+        "caminho": "feira-ciencias"
+      },
+      {
+        "nome": "Semana de Artes",
+        "descricao": "Celebrando a diversidade artística",
+        "sigla": "ARTESEMA",
+        "caminho": "semana-artes"
+      }
+    ]
+  }
+  

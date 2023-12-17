@@ -21,8 +21,8 @@ public class UsuarioController {
     }
 
     @GetMapping("/{id}")
-    public Usuario obterUsuario(@RequestBody Usuario usuario){
-        return usuarioService.obterUsuario(usuario.getId());
+    public Usuario obterUsuario(@PathVariable Long id){
+        return usuarioService.obterUsuario(id);
     }
 
     @PostMapping
@@ -40,7 +40,7 @@ public class UsuarioController {
         usuarioService.deletarUsuario(id);
     }
 
-    @PostMapping("/{usuarioId}/favoritar/{atividadeId}")
+    @PutMapping("/{usuarioId}/favoritar/{atividadeId}")
     public ResponseEntity<String> favoritarAtividade(@PathVariable Long usuarioId, @PathVariable Long atividadeId) {
         boolean sucesso = usuarioService.favoritarAtividade(usuarioId, atividadeId);
         if (sucesso) {
@@ -49,4 +49,16 @@ public class UsuarioController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Usuário ou Atividade não encontrados.");
         }
     }
+
+    @PutMapping("/{usuarioId}/desfavoritar/{atividadeId}")
+    public ResponseEntity<String> desfavoritarAtividade(@PathVariable Long usuarioId, @PathVariable Long atividadeId) {
+        boolean sucesso = usuarioService.desfavoritarAtividade(usuarioId, atividadeId);
+        if (sucesso) {
+            return ResponseEntity.ok("Atividade desfavoritada com sucesso!");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Usuário ou Atividade não encontrados.");
+        }
+    }
+
+
 }

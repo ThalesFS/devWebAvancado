@@ -27,10 +27,10 @@ public class Atividade {
     private LocalTime horarioFim;
 
     @ManyToOne
-    @JoinColumn(name = "edicao_id")
+    @JoinColumn(name = "edicao")
     private Edicao edicao;
 
     @ManyToOne
-    @JoinColumn(name = "espaco_id")
+    @JoinColumn(name = "espaco")
     private Espaco espaco;
 }

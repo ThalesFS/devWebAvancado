@@ -52,4 +52,17 @@ public class UsuarioService {
             return false;
         }
     }
+
+    public boolean desfavoritarAtividade(Long usuarioId, Long atividadeId){
+        Usuario usuario = usuarioRepository.findById(usuarioId).orElse(null);
+        Atividade atividade = atividadeRepository.findById(atividadeId).orElse(null);
+
+        if (usuario != null && atividade != null) {
+            usuario.desfavoritarAtividade(atividade);
+            usuarioRepository.save(usuario);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
